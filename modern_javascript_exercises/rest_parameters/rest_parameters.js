@@ -1,10 +1,26 @@
 // Instructions can be found in rest_parameters.md
 
-function add(a, b) {
+//////////////////////////////////////////////////
+//
+// JEST version
+export function add(...args) {
   // Add a loop here
-  return a + b;
+  return args.reduce((total, n) => total + n, 0);
 }
 
-add(1, 2, 3, 4, 5);
+//console.log(add(1, 2, 3, 4, 5));
 
-module.exports = add;
+//module.exports = add;
+
+////////////////////////////////////////////////
+//
+// NODE version
+//
+// function add(...args) {
+    // Add a loop here
+//  return args.reduce((total, n) => total + n, 0);
+//}
+//
+// console.log(add(1, 2, 3, 4, 5));
+//
+// module.exports = add;
